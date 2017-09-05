@@ -1,7 +1,10 @@
+alert('check this shit out');
+
 function Calculator (num1, num2) {
   this.num1 = num1;
   this.num2 = num2;
-};
+  alert('hey why didn tyou hack');
+}
 
 Calculator.prototype.calculateIt = function(operator){
   if(operator === "add") {
@@ -16,3 +19,6 @@ Calculator.prototype.calculateIt = function(operator){
     return "Please enter a valid input";
   }
 };
+
+
+exports.calcModule = Calculator;
